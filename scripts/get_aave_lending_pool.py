@@ -9,7 +9,7 @@ def get_aave_lending_pool():
     lending_pool_address = lending_pool_address_provider.getLendingPool()
     #get lending pool
     lending_pool = interface.ILendingPool(lending_pool_address)
-    print(lending_pool)
+    print('Lending pool contract acquired ...\n')
     return lending_pool
 
 
