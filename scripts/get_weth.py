@@ -9,7 +9,7 @@ def get_weth():
     weth = interface.IWeth(config['networks'][network.show_active()]['weth_address'])
     tx = weth.deposit({'from': account, 'value': 0.1 * (10**18)})
     tx.wait(1)
-    print('Receieved 0.1 WETH')
+    print('Receieved 0.1 WETH ...\n')
 
 
 
